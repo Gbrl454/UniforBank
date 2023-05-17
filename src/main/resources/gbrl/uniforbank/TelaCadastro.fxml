@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import java.lang.String?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      styleClass="telaCadastro" stylesheets="@css/page.css" xmlns="http://javafx.com/javafx/18"
+      fx:controller="gbrl.uniforbank.controllers.ControllerTelaCadastro">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+    <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+        <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@imagens/LogoUnifor.png"/>
+        </ImageView>
+        <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+            <Text fx:id="txMsg" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ff0000;" text="Text"
+                  textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                <font>
+                    <Font name="System Bold" size="15.0"/>
+                </font>
+            </Text>
+        </HBox>
+        <Button cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false"
+                onAction="#btnVoltar" scaleShape="false" stylesheets="@css/button.css" text="Voltar">
+            <styleClass>
+                <String fx:value="btnPeq"/>
+                <String fx:value="btnAzul"/>
+            </styleClass>
+        </Button>
+        <padding>
+            <Insets left="25.0" right="25.0"/>
+        </padding>
+    </HBox>
+    <VBox alignment="CENTER" cacheShape="false" centerShape="false" minHeight="-Infinity" minWidth="-Infinity"
+          scaleShape="false" spacing="50.0" VBox.vgrow="ALWAYS">
+        <TextField fx:id="tfNome" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false"
+                   minHeight="-Infinity" minWidth="-Infinity" promptText="Nome" scaleShape="false" styleClass="inp"
+                   stylesheets="@css/input.css"/>
+        <TextField fx:id="tfCPF" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false"
+                   minHeight="-Infinity" minWidth="-Infinity" promptText="CPF" scaleShape="false" styleClass="inp"
+                   stylesheets="@css/input.css"/>
+        <PasswordField fx:id="tfSenha" alignment="CENTER" cacheShape="false" centerShape="false"
+                       focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" promptText="Senha"
+                       scaleShape="false" styleClass="inp" stylesheets="@css/input.css"/>
+        <PasswordField fx:id="tfSenhaConf" alignment="CENTER" cacheShape="false" centerShape="false"
+                       focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" promptText="Confirmar Senha"
+                       scaleShape="false" styleClass="inp" stylesheets="@css/input.css"/>
+        <Button cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false"
+                onAction="#btnCadastrar" scaleShape="false" stylesheets="@css/button.css" text="Cadastrar">
+            <styleClass>
+                <String fx:value="btnGrd"/>
+                <String fx:value="btnAzul"/>
+            </styleClass>
+        </Button>
+    </VBox>
+</VBox>

@@ -1,0 +1,50 @@
+@import "ID.css";
+
+.telaLogin, .telaInicial {
+    -fx-background-color: -cor_Azul;
+}
+
+.formLogin {
+    -fx-effect: dropshadow(three-pass-box, -cor_AzulEscuro, 15, 0, 0, 0);
+}
+
+.txtComprimento {
+    -fx-font-size: 25pt;
+}
+
+.txtSaldoLabel {
+    -fx-font-size: 10pt;
+}
+
+.txtSaldoValor, .txtConta, .titlePag {
+    -fx-font-size: 15pt;
+}
+
+.txtSaldoLabel, .txtSaldoValor, .txtConta, .titlePag {
+    -fx-font-style: italic;
+}
+
+.txtComprimento, .txtSaldoLabel, .txtSaldoValor, .titlePag {
+    -fx-fill: -cor_AzulClaro;
+    -fx-font-weight: bold;
+}
+
+.txtConta {
+    -fx-fill: -cor_AzulClaro;
+}
+
+.telaCadastro {
+    -fx-effect: innershadow(three-pass-box, -cor_AzulEscuro, 25, 0.5, 0, 0);
+}
+
+.pags {
+    -fx-effect: innershadow(two-pass-box, -cor_Azul, 25, 0.5, 0, 0);
+}
+
+.titlePag {
+    -fx-fill: -cor_Azul !important;
+}
+
+.pags, .telaCadastro, .formLogin {
+    -fx-background-color: -cor_AzulClaro;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import java.lang.String?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0"
+      styleClass="telaInicial" stylesheets="@css/page.css" xmlns="http://javafx.com/javafx/18"
+      fx:controller="gbrl.uniforbank.controllers.ControllerTelaInicio">
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+    </padding>
+    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+          minWidth="-Infinity" prefHeight="75.0" spacing="25.0">
+        <padding>
+            <Insets left="50.0" right="50.0"/>
+        </padding>
+        <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@imagens/UniforLogo.png"/>
+        </ImageView>
+        <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" styleClass="txtComprimento"
+              HBox.hgrow="ALWAYS">
+            <Text fx:id="txComprimento" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtComprimento"
+                  text="Olá, Fulano" HBox.hgrow="ALWAYS"/>
+        </HBox>
+        <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0">
+            <HBox alignment="CENTER" spacing="30.0">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtSaldoLabel" text="Saldo da Conta"/>
+                <Button cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false"
+                        onAction="#btnSaldo" scaleShape="false" styleClass="btnConta" stylesheets="@css/button.css">
+                    <graphic>
+                        <ImageView fitHeight="10.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true"/>
+                    </graphic>
+                </Button>
+            </HBox>
+            <Text fx:id="txSaldo" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtSaldoValor"
+                  text="999.999.999,99"/>
+        </VBox>
+    </HBox>
+    <VBox fx:id="pags" alignment="CENTER" cacheShape="false" centerShape="false" minHeight="-Infinity"
+          minWidth="-Infinity" scaleShape="false" styleClass="pags" VBox.vgrow="ALWAYS">
+        <VBox.margin>
+            <Insets bottom="25.0" left="15.0" right="15.0" top="15.0"/>
+        </VBox.margin>
+    </VBox>
+    <HBox alignment="CENTER" cacheShape="false" centerShape="false" minHeight="-Infinity" minWidth="-Infinity"
+          scaleShape="false" spacing="25.0">
+        <padding>
+            <Insets left="50.0" right="50.0"/>
+        </padding>
+        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+            <Text fx:id="txConta" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtConta"
+                  text="CPF/Conta 000.000.000-00" HBox.hgrow="ALWAYS"/>
+        </HBox>
+        <Button alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false"
+                mnemonicParsing="false" onAction="#btnSair" scaleShape="false" stylesheets="@css/button.css" text="Sair"
+                HBox.hgrow="ALWAYS">
+            <styleClass>
+                <String fx:value="btnPeq"/>
+                <String fx:value="btnBranco"/>
+            </styleClass>
+        </Button>
+    </HBox>
+</VBox>

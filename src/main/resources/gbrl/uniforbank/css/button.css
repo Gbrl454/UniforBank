@@ -1,0 +1,45 @@
+@import "ID.css";
+
+* {
+    -fx-background-radius: 100;
+    -fx-font-style: italic;
+    -fx-cursor: pointer;
+}
+
+.btnGrd {
+    -fx-font-size: 20pt;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 30px;
+}
+
+.btnMed {
+    -fx-font-size: 15pt;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 25px;
+}
+
+.btnPeq {
+    -fx-font-size: 10pt;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 25px;
+}
+
+.btnAzul {
+    -fx-background-color: -cor_Azul;
+    -fx-text-fill: -cor_Branco;
+}
+
+.btnBranco {
+    -fx-background-color: -cor_AzulClaro;
+    -fx-text-fill: -cor_Azul;
+}
+
+.btnAzul:hover, .btnBranco:hover {
+    -fx-background-color: -cor_AzulEscuro;
+    -fx-text-fill: -cor_Azul;
+}
+
+.btnConta {
+    -fx-pref-width: 5px;
+    -fx-pref-height: 5px;
+}

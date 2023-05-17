@@ -1,0 +1,15 @@
+@import "ID.css";
+
+.inp {
+    -fx-font-size: 15pt;
+    -fx-max-width: 500px;
+    -fx-pref-height: 50px;
+    -fx-focus-color: none;
+    -fx-background-color: none;
+    -fx-border-color: -cor_Azul;
+    -fx-border-width: 3;
+    -fx-border-radius: 100;
+    -fx-background-radius: 100;
+    -fx-text-fill: -cor_AzulEscuro;
+    -fx-prompt-text-fill: -cor_Azul;
+}

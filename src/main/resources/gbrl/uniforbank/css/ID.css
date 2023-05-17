@@ -1,0 +1,11 @@
+.root {
+    -cor_Azul: #004AF7;
+    -cor_AzulClaro: #E4F2FE;
+    -cor_Branco: #FFFFFF;
+    -cor_AzulEscuro: #132090;
+    -fx-font-family: Exo;
+}
+
+@font-face {
+    src: url("../fonts/Exo-VariableFont_wght.ttf")
+}
