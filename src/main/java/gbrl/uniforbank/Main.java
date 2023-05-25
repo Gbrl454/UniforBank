@@ -15,17 +15,12 @@ public class Main extends Application {
         launch();
     }
 
-    public static void changeScreen (String scene) {
+    public static void changeScreen (Telas scene) {
         switch (scene) {
-            case "login" -> {
-                stage.setScene(telaLogin);
-            }
-            case "cadastro" -> {
-                stage.setScene(telaCadastro);
-            }
-            case "inicio" -> {
-                stage.setScene(telaInicio);
-            }
+            case LOGIN -> stage.setScene(telaLogin);
+            case CADASTRO -> stage.setScene(telaCadastro);
+            case INICIO -> stage.setScene(telaInicio);
+
         }
     }
 
@@ -33,6 +28,9 @@ public class Main extends Application {
     public void start (Stage stageS) throws IOException {
         stage = stageS;
         int value = 75;
+
+        //        stageS.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/gbrl/uniforbank/imagens/LogoUnifor.png"))));
+        //        stageS.resizableProperty().setValue(Boolean.FALSE);
 
         FXMLLoader fxmlLogin = new FXMLLoader(Main.class.getResource("TelaLogin.fxml"));
         telaLogin = new Scene(fxmlLogin.load(), 16 * value, 9 * value);

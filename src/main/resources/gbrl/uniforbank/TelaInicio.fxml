@@ -7,7 +7,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Text?>
 <?import java.lang.String?>
-<VBox xmlns:fx="http://javafx.com/fxml/1" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0"
+<VBox xmlns:fx="http://javafx.com/fxml/1" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+      prefWidth="700.0"
       styleClass="telaInicial" stylesheets="@css/page.css" xmlns="http://javafx.com/javafx/18"
       fx:controller="gbrl.uniforbank.controllers.ControllerTelaInicio">
     <padding>

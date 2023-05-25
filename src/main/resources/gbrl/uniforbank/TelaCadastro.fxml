@@ -8,7 +8,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import java.lang.String?>
-<VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+<VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity"
       styleClass="telaCadastro" stylesheets="@css/page.css" xmlns="http://javafx.com/javafx/18"
       fx:controller="gbrl.uniforbank.controllers.ControllerTelaCadastro">
     <padding>

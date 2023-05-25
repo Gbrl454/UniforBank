@@ -1,57 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import java.lang.String?>
-<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" styleClass="telaLogin"
-      stylesheets="@css/page.css" xmlns="http://javafx.com/javafx/18"
-      fx:controller="gbrl.uniforbank.controllers.ControllerTelaLogin">
+
+<HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" styleClass="telaLogin" stylesheets="@css/page.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gbrl.uniforbank.controllers.ControllerTelaLogin">
     <VBox alignment="TOP_CENTER" prefWidth="640.0" spacing="25.0" styleClass="formLogin">
         <HBox.margin>
-            <Insets/>
+            <Insets />
         </HBox.margin>
         <padding>
-            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
         </padding>
         <ImageView fitHeight="250.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
-            <Image url="@imagens/UniforBank.png"/>
+            <Image url="@imagens/UniforBank.png" />
         </ImageView>
         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="50.0" VBox.vgrow="ALWAYS">
-            <TextField fx:id="tfCPF" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false"
-                       minHeight="-Infinity" minWidth="-Infinity" promptText="CPF" scaleShape="false" styleClass="inp"
-                       stylesheets="@css/input.css"/>
-            <PasswordField fx:id="tfSenha" alignment="CENTER" cacheShape="false" centerShape="false"
-                           focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" promptText="Senha"
-                           scaleShape="false" styleClass="inp" stylesheets="@css/input.css"/>
-            <Button cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false"
-                    onAction="#btnLogar" scaleShape="false" stylesheets="@css/button.css" text="Logar">
+            <TextField fx:id="tfCPF" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#offTxMsg" promptText="CPF" scaleShape="false" styleClass="inp" stylesheets="@css/input.css" />
+            <PasswordField fx:id="tfSenha" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#offTxMsg" promptText="Senha" scaleShape="false" styleClass="inp" stylesheets="@css/input.css" />
+            <Button cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false" onAction="#btnLogar" scaleShape="false" stylesheets="@css/button.css" text="Logar">
                 <styleClass>
-                    <String fx:value="btnGrd"/>
-                    <String fx:value="btnAzul"/>
+                    <String fx:value="btnGrd" />
+                    <String fx:value="btnAzul" />
                 </styleClass>
             </Button>
         </VBox>
-        <Text fx:id="txMsg" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ff0000;" text="Text"
-              textAlignment="CENTER" VBox.vgrow="ALWAYS">
+        <Text fx:id="txMsg" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ff0000;" text="Text" textAlignment="CENTER" visible="false" VBox.vgrow="ALWAYS">
             <font>
-                <Font name="System Bold" size="15.0"/>
+                <Font name="System Bold" size="15.0" />
             </font>
         </Text>
-        <Button cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false"
-                onAction="#btnRegister" scaleShape="false" stylesheets="@css/button.css" text="Cadastrar">
+        <Button cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false" onAction="#btnRegister" scaleShape="false" stylesheets="@css/button.css" text="Cadastrar">
             <styleClass>
-                <String fx:value="btnMed"/>
-                <String fx:value="btnAzul"/>
+                <String fx:value="btnMed" />
+                <String fx:value="btnAzul" />
             </styleClass>
             <VBox.margin>
-                <Insets/>
+                <Insets />
             </VBox.margin>
         </Button>
     </VBox>
